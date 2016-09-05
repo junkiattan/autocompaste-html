@@ -20,11 +20,15 @@
             <div class="container">
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Welcome</a></li>
-                        <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
-                        <li class="active"><a href="instructions.html">Instructions</a></li>
-                        <li><a href="experiment.html">Experiment</a></li>
-                        <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
+                        <li><a>Welcome</a></li>
+                        <li><a>Pre Questionnaire</a></li>
+                        <li class="active"><a>Instructions</a></li>
+                        <li><a>Practice Session</a></li>
+                        <li><a>Experiment Block 1</a></li>
+                        <li><a>Experiment Block 2</a></li>
+                        <li><a>Experiment Block 3</a></li>
+                        <!--<li><a>Experiment Block 4</a></li>-->
+                        <li><a>Post Questionnaire</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,11 +39,121 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1>Instructions</h1>
                     <hr>
-                    <p>Dear participant <span class="js-pid pid"></span>, please read the instructions before the experiment.
+                    <h4><b>Dear participant <span class="js-pid pid"></span>, please read the instructions before the experiment</b>.</h4>
+                    
+                    <h5><b><u>General</u></b></h5>
 
-                    <p>There should always be an instruction before doing the actual evaluation of the interface.<p>
-                    <p>Enter your instructions to your participant here. Diagrams and screenshots will be very helpful!</p>
-
+                        <p>The task for you is just to copy over the correct phrase/sentence/paragraph to answer the questions given to you, as accurate and as quickly as possible. Below are guidelines applicable to both the Practice Session as well as Experiment Block.</p>
+                    
+                        <p>In each session, the screen will be split into two sections, the left section containing the conditions of the experiment and the right section containing the text editor window and the windows containing text, as shown in Figure 1.</p>
+                        
+                        <figure>
+                            <img src="img/mainPracticeSession.PNG" alt="Overall Practice Session screen" style="width:700px;height:400px;">
+                            <figcaption>Figure 1: Overall Practice Session screen</figcaption>
+                        </figure>
+                    
+                        <p>The number of windows in the right section of the display would depend on the type of session, i.e. Practice Session or Experiment Block. Here in the screenshot of the practice session, you can see that there are two text windows. The window entitled “Text Editor” simulates the destination you copy your desired text over to. This is shown in Figure 2.</p>
+                    
+                        <figure>
+                            <img src="img/rightSection.PNG" alt="Right section of Practice Session screen" style="width:700px;height:400px;">
+                            <figcaption>Figure 2: Right section of Practice Session screen</figcaption>
+                        </figure>
+                    
+                        <p>In the left section, as shown in Figure 3 below, you would see the title of the session, followed by certain conditions of each trial. The sequence are as follows:</p>
+                        <ol type = 'a'>
+                            <li><b>Technique</b>: Type of copy-paste method, i.e. AutoComPaste vs Traditional</li>
+                            <li><b>Granularity</b>: Type of text unit, whether it is a phrase, sentence or paragraph. Details on what consists on a phrase, sentence or paragraph will be specified during practice.</li>
+                            <li><b>Knowledge of content at that instant</b>: This is to simulate real-life conditions, as sometimes we do know exactly what we want to copy over and some other times we need to find the information first. How both conditions are simulated will be shown during practice as well.</li>
+                            <li><b>Trial</b>: Keeps track of your current progress. Once you have completed all the trials for that session/block, you would be given a break before moving on to the next block/post-questionnaire.</li>
+                        </ol>
+                    
+                        <p>There is also a coloured box below. This is our stimuli and it is responsible for displaying a question at the start of each trial, for which you have to find the correct answer from one of the six text windows before using one of the two techniques to copy it over.</p>
+                    
+                        <figure>
+                            <img src="img/leftSection.PNG" alt="Left section of Practice Session screen" style="width:300px;height:400px;">
+                            <figcaption>Figure 3: Left section of Practice Session screen</figcaption>
+                        </figure>    
+                    
+                    <h5><b><u>AutoComPaste</u></b></h5>
+                        <p>AutoComPaste is an alternative method to copy-paste. It makes use of auto-completion in order to suggest a list of possible completions when the user types out the first few letters of the desired text, i.e. the prefix of the phrase.</p>
+                        <p><i><u>You will get to practice this during the practice sessions. Please try to take your time during the practice sessions in order to maximize your familiarity with AutoComPaste.</u></i></p>
+                        <p><i><u>An important thing to note is that sometimes when you wish to copy over multiple sentences, you have to note the prefix of each sentence in that block, as each time you copy using AutoComPaste, it only copies over a maximum of one sentence at a time.</u></i></p>
+                    
+                        <p>Below shows a pictorial representation on how AutoComPaste is used:</p>
+                    
+                        <figure>
+                            <img src="img/Yes.PNG" alt="User finds desired phrase and notes the prefix" style="width:700px;height:400px;">
+                            <figcaption>Figure 4.1: User finds desired phrase and notes the prefix</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/Yes.PNG" alt="ACP's auto-suggested list of completions" style="width:700px;height:400px;">
+                            <figcaption>Figure 4.2: ACP would generate a list of suggested completions based on prefix typed</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/Yes.PNG" alt="User selects desired phrase" style="width:700px;height:400px;">
+                            <figcaption>Figure 4.3: User selects the desired text out of the list and presses "Enter"</figcaption>
+                        </figure>
+                    
+                    
+                    <h5><b><u>Practice Session</u></b></h5>
+                        <p>The practice sessions are for you to familiarize yourself with AutoComPaste technique, as well as refresh a little on the traditional Copy-Paste technique when necessary.<b>The Practice Session is not timed, nor will any data be collected for this session.</b></p>
+                    
+                        <p>For the purposes of this experiment, we define the different text units as follows:</p>
+                    
+                        <ol type = 'a'>
+                            <li><b>Phrase</b>: One that does not end with a full-stop</li>
+                            <li><b>Sentence</b>: A statement that ends with a full-stop as shown.</li>
+                            <li><b>Paragraph</b>: A block containing at least 2 sentences. Meaning a block of statements containing at least 2 full-stops as shown.</li>
+                        </ol>
+                    
+                        <p><i><u>It is important to note these differences, as the accuracy of what you copy over will be important. E.g. If you wanted to copy over a phrase but accidentally copied over an additional full-stop, the whole phrase may be deemed as inaccurate.</u></i></p>
+                    
+                        <p>To simulate “Knowledge of content at that instant”, we have set up two simulations:</p>
+                        <ol type = 'a'>
+                            <li>When <b>"Yes"</b> is indicated, it means that you as the user knows exactly what you want to copy over at the point in time, as opposed to having to first search for the text that you want to copy. In this event, the window which contains the answer to the given question would immediately be focused to the front of the screen, meaning the relevant window would be the first thing you see. In addition to that, the answer within the window would be highlighted for you to see clearly.
+                            <p>An exmaple is shown in Figure 5 below.</p>
+                            <figure>
+                                <img src="img/Yes.PNG" alt="Simulation of Text Knowledge at the point of copy" style="width:700px;height:400px;">
+                                <figcaption>Figure 5: Simulation of Text Knowledge at the point of copy</figcaption>
+                            </figure> 
+                            </li>
+                            <li>When <b>"No"</b> is indicated, it means you as the user do not yet know the exact text you want to copy over. Hence you might have to do searching before you can discover the desired phrase. In this event, we simple remove the focusing of the relevant window to the front. Also, there would not be any highlighting of the answer.
+                            <p>An exmaple is shown in Figure 6 below.</p>
+                            <figure>
+                                <img src="img/No.PNG" alt="Simulation of no Text Knowledge at the point of copy" style="width:700px;height:400px;">
+                                <figcaption>Figure 6: Simulation of no Text Knowledge at the point of copy</figcaption>
+                            </figure>
+                            </li>
+                        </ol>
+                        <p>Between each practice session, simply press the “Next Task” button to proceed to the next trial.</p>
+                        <p><u><i>After all the practice trials are completed, there will be a break of 3 minutes. A “Proceed” button would appear automatically after 3 minutes. Pressing that would immediately start the actual experiment so please be ready before pressing “Proceed”.</i></u></p>
+                    
+                    <h5><b><u>Experiment Blocks</u></b></h5>
+                    
+                        <p>The set-up for the actual experiment blocks is similar to that of the practice session, with certain changes.</p>
+                        <p>There will be 6 windows opened and a total of 36 trials in each block, with a total of 3 blocks for the main experiment. <b>For every trial in the actual experiment, they are both timed and assessed based on accuracy of the text copied over.</b></p>
+                        <p>There will be 3 minute breaks between each block as well, with a “Proceed” button automatically appearing after 3 minutes.</p>
+                        <p>To ensure the accuracy of the experiment, for the traditional copy-paste method, please refrain from manually typing down the text. Strictly use the techniques to copy-paste so that it can properly aid us in determine their performances.</p>
+                        
+                    
+                    <h5><b><u>Post-Questionnaire</u></b></h5>
+                        <p>Please take as long as you need at the questionnaire. Tell us your critical and honest feedback about your user experience and any difficulties you faced using both techniques.</p>
+                    
+                    <h5><b><u>Note</u></b></h5>
+                    <ol type = 'a'>
+                        <li>
+                            <p><b>Please consider all the highlighted/bolded/italicized points stated above before proceeding to the Practice.</b></p>
+                        </li>
+                        <li>
+                            <p><b>There will be a printed version of the instruction issued to you, in case you need to refer during the Practice Session.</b></p> 
+                        </li>
+                        <li>
+                            <p><b>For the actual experiment, take note that for Article 6, it actually contains two paragraphs. The first long line is a paragraph while the next long line represents another paragraph. If asked to search for text within that article, please be ready to scroll rightwards to find your desired text.</b></p>
+                        </li>
+                        <li>
+                            <p><b>Please take as long as you need to read the Instructions. Approach the experiment coordinator you have any doubts or questions at all and we will definitely clarify them.</b></p>
+                        </li>
+                    </ol>
                     <form class="form-inline">
                         <button type="submit" class="btn btn-primary btn-lg">Next</button>
                     </form>
@@ -57,7 +171,7 @@
             $(function () {
                 $('form').submit(function (event) {
                     event.preventDefault();
-                    window.location = 'experiment.html';
+                    window.location = 'experiment0.html';
                 });
             });
         </script>

@@ -1,0 +1,11 @@
+What is a phrase? One that does not end in a full-stop
+
+What is a sentence? A statement that ends in a full-stop as shown.
+
+What is a paragraph? A block containing at least 2 sentences. Meaning a block of statements containing at least 2 full-stops as shown.
+
+What is the purpose? To investigate the performance difference between ACP and CP
+
+Why are you doing this experiment? It is for CS4249 Assignment 1.
+
+Do you think you are handsome? Things like this is hard to say. In summary, don't be so vain hahaha.

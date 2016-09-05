@@ -81,9 +81,11 @@ var ACPToolKit = (function () {
 
             var data_file = options.data_file;
             var stimuli = options.stimuli;
+            var answer = options.answer;
 
             $('.js-expt-technique').text(options.technique);
             $('.js-expt-granularity').text(options.granularity);
+            $('.js-expt-priorKnowledge').text(options.priorKnowledge);
             $('.js-expt-stimuli').text(options.stimuli);
 
             // Clean up DOM
@@ -111,22 +113,27 @@ var ACPToolKit = (function () {
 
             // Highlight the relevant text.
             iface.addEventListener('loaded', function () {
-                var lines_to_highlight = stimuli.split("\n\n");
+                var lines_to_highlight = answer.split("\n\n");
+                var showHighlight = options.priorKnowledge;
 
                 var windows = wm.getWindowList();
+                
                 for (var i = 0; i < windows.length; i++) {
                     if (windows[i] == 'text_editor') {
                         continue;
                     }
-
+                   
                     var win = wm.getWindowContent(windows[i]);
                     var content = $(win).find('pre').html();
-                    lines_to_highlight.map (function (value, index, array) {
-                        content = content.replace (value,
-                        "<span class=\"highlighted\">" + value + "</span>");
-                    });
-
-                  $(win).find('pre').empty().append(content);
+                    if (content.indexOf(lines_to_highlight)>=0 && showHighlight == "Yes"){
+                        lines_to_highlight.map (function (value, index, array) {
+                            content = content.replace (value, "<span class=\"highlighted\">" + value + "</span>");
+                            
+                        });
+                        $(win).find('pre').empty().append(content);
+                        wm.setFocus(windows[i]);
+                        wm.moveWindowTo(windows[i],350,0);
+                    }
                 }
             });
         }

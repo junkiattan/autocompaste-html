@@ -1,0 +1,11 @@
+What does it mean by having 'Prior Knowledge of Content'? It means that you as the user would have known the text to be copied. To simulate this, when 'Yes' is indicated, we will highlight the text to be copied, as well as bring the relevant window out in front of the user.
+
+What does it mean to not have 'Prior Knowledge of Content'? It means you as the user do not know the text to be copied over. Hence when 'No' is indicated, you would have to find the text before you can copy over.
+
+What if I forget how to use ACP? Refer to instructions and try it yourself
+
+What if I need to go toilet? There will be ample breaks provided so please refrain from going to the bathroom as the actual trials are timed.
+
+What will be asked of me? For the actual experiments, you basically just have to copy over the desired answers to the questions provided in the textbox as shown.
+
+What is the duration of the whole experiment? 45 minutes

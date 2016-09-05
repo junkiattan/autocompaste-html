@@ -21,10 +21,14 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Welcome</a></li>
-                        <li class="active"><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
-                        <li><a href="instructions.html">Instructions</a></li>
-                        <li><a href="experiment.html">Experiment</a></li>
-                        <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
+                        <li class="active"><a>Pre Questionnaire</a></li>
+                        <li><a>Instructions</a></li>
+                        <li><a>Practice Session</a></li>
+                        <li><a>Experiment Block 1</a></li>
+                        <li><a>Experiment Block 2</a></li>
+                        <li><a>Experiment Block 3</a></li>
+                        <!--<li><a>Experiment Block 4</a></li>-->
+                        <li><a>Post Questionnaire</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,59 +39,170 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1>Pre-Experiment Questionnaire</h1>
                     <hr>
-                    <p>This part of the interface collects whatever pre-experiment information. Please come up with a basic questionnaire to help you to gather participant information. The purpose of this questionnaire is to report the participant data and convince readers that you have picked an appropriate target user group and the result has certain generalizability.</p>
+                    <p>Hey there! Please fill in this pre-experiment questionnaire to allow us to know more about you;)</p>
 
                     <p>Please put all information needed for participant: <span class="js-pid pid"></span></p>
 
                     <form id="pre-expt-form">
+                        
                         <div class="form-group">
-                            <label for="q1">Question 1 - Text</label>
-                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter answer">
+                            <label for="q1">Q1. Please state your full name.</label>
+                            <input type="text" class="form-control" id="q1" name="q1" placeholder="e.g. John Lim">
                         </div>
+                        
                         <div class="form-group">
-                            <label for="q2">Question 2 - Radio</label>
+                            <label for="q2">Q2. Please state your age.</label>
+                            <input type="text" class="form-control" id="q2" name="q2" placeholder="e.g. 24">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="q3">Q3. Please state your gender.</label>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios1" value="radio1">
-                                Radio response 1
+                                <input type="radio" name="q3" id="optionsRadios1" value="Male">
+                                Male
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios2" value="radio2">
-                                Radio response 2
+                                <input type="radio" name="q3" id="optionsRadios2" value="Female">
+                                Female
                               </label>
                             </div>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="q3">Question 3 - Checkbox</label>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" name="q3" value="checkbox1">
-                                Checkbox response 1
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" name="q3" value="checkbox2">
-                                Checkbox response 2
-                              </label>
-                            </div>
+                            <label for="q4">Q4. Please state your faculty.</label>
+                            <input type="text" class="form-control" id="q4" name="q4" placeholder="e.g. School of Computing">
                         </div>
+                        
                         <div class="form-group">
-                            <label for="q4">Question 4 - Select Options</label>
-                            <select class="form-control" name="q4">
-                                <option value="option1">Option response 1</option>
-                                <option value="option2">Option response 2</option>
-                                <option value="option3">Option response 3</option>
-                                <option value="option4">Option response 4</option>
-                                <option value="option1">Option response 5</option>
-                            </select>
+                            <label for="q5">Q5. Please state your major.</label>
+                            <input type="text" class="form-control" id="q5" name="q5" placeholder="e.g. Business Analytics">
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="q6">Q6. How frequently do you use the computer, with 1 usage being defined as using the computer for at least 5 minutes continuously?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios3" value="Not frequent (Less than thrice per week)">
+                                Not frequent (Less than thrice per week)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios4" value="Less frequent (thrice to seven times per week)">
+                                Less frequent (thrice to seven times per week)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios5" value="More frequent (seven times to fourteen times per week)">
+                                More frequent (seven times to fourteen times per week)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="optionsRadios6" value="Very frequent (more than fourteen times per week)">
+                                Very frequent (more than fourteen times per week)
+                              </label>
+                            </div>    
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="q7">Q7. Do you have any prior experience using normal Copy-Paste technique, i.e. Ctrl-C and Ctrl-V?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios7" value="Yes">
+                                Yes
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="optionsRadios8" value="No">
+                                No
+                              </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="q8">Q8. If you answered Yes to Q7, how frequently do you use the normal Copy-Paste technique on a daily basis?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q8" id="optionsRadios3" value="Not frequent (Less than twice daily)">
+                                Not frequent (Less than twice daily)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q8" id="optionsRadios4" value="Less frequent (twice to four times daily)">
+                                Less frequent (twice to four times daily)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q8" id="optionsRadios5" value="More frequent (four times to six times daily)">
+                                More frequent (four times to six times daily)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q8" id="optionsRadios6" value="Very frequent (more than six times daily)">
+                                Very frequent (more than six times daily)
+                              </label>
+                            </div>    
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="q9">Q9. Do you have any prior experience using AutoComPaste?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q9" id="optionsRadios9" value="Yes">
+                                Yes
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q9" id="optionsRadios10" value="No">
+                                No
+                              </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="q10">Q10. If you answered Yes to Q9, how frequently do you use AutoComPaste on a daily basis?</label>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q10" id="optionsRadios3" value="Not frequent (Less than twice daily)">
+                                Not frequent (Less than twice daily)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q10" id="optionsRadios4" value="Less frequent (twice to four times daily)">
+                                Less frequent (twice to four times daily)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q10" id="optionsRadios5" value="More frequent (four times to six times daily)">
+                                More frequent (four times to six times daily)
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="q10" id="optionsRadios6" value="Very frequent (more than six times daily)">
+                                Very frequent (more than six times daily)
+                              </label>
+                            </div>    
+                        </div>
+                        
+                        <!--
                         <div class="form-group">
                             <label for="q5">Question 5 - Textarea</label>
                             <textarea class="form-control" id="q5" name="q5" placeholder="Enter response"></textarea>
                         </div>
+                        -->
                         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                     </form>
                 </div>
@@ -101,15 +216,30 @@
         <script src="js/main.js"></script>
 
         <script>
+            function validateForm() {
+              $('.form-field').each(function() {
+                if ( $(this).val() === '' ) {
+                  return false
+                }
+                else {
+                  return true;
+                }
+              });
+            }
             $(function () {
                 $('#pre-expt-form').submit(function (event) {
                     event.preventDefault();
                     var formResponses = $(this).serializeArray();
-                    // Do your own form validation here.
-                    // Download the form responses to be analysed later.
-                    ACPToolKit.downloadFormData(formResponses, 'pre');
-                    window.location = 'instructions.html';
+                    if (validateForm()){
+                        // Download the form responses to be analysed later.
+                        ACPToolKit.downloadFormData(formResponses, 'pre');
+                        window.location = 'instructions.html';
+                    } else {
+                        window.alert("Please fill in all fields");
+                    }
+                    
                 });
+                    
             });
         </script>
     </body>
