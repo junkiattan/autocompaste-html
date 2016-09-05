@@ -216,21 +216,18 @@
         <script src="js/main.js"></script>
 
         <script>
-            function validateForm() {
-              $('.form-field').each(function() {
-                if ( $(this).val() === '' ) {
-                  return false
-                }
-                else {
-                  return true;
-                }
-              });
-            }
             $(function () {
                 $('#pre-expt-form').submit(function (event) {
                     event.preventDefault();
                     var formResponses = $(this).serializeArray();
-                    if (validateForm()){
+                    
+                    var emptyFields = $('.form-group :input').filter(function() {
+                        return $.trim(this.value) === "";
+                    });
+                    function allRadio() {
+                        return ($('input[type=radio]:checked').size() === 6);
+                    }
+                    if (!emptyFields.length && allRadio()){
                         // Download the form responses to be analysed later.
                         ACPToolKit.downloadFormData(formResponses, 'pre');
                         window.location = 'instructions.html';

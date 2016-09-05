@@ -282,22 +282,19 @@
         <script src="js/main.js"></script>
 
         <script>
-            function validateForm() {
-              $('.form-field').each(function() {
-                if ( $(this).val() === '' ) {
-                  return false
-                }
-                else {
-                  return true;
-                }
-              });
-            }
             $(function () {
                 $('#post-expt-form').submit(function (event) {
                     event.preventDefault();
                     var formResponses = $(this).serializeArray();
                     // Do your own form validation here.
-                    if (validateForm()){
+                    
+                    var emptyFields = $('.form-group :input').filter(function() {
+                        return $.trim(this.value) === "";
+                    });
+                    function allRadio() {
+                        return ($('input[type=radio]:checked').size() === 6);
+                    }
+                    if (!emptyFields.length && allRadio()){
                         ACPToolKit.downloadFormData(formResponses, 'post');
                         ACPToolKit.clearAllData();
                         alert('Thank you for your participation!');
