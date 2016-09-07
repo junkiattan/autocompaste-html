@@ -65,7 +65,14 @@
                 $('#pid-form').submit(function (event) {
                     event.preventDefault();
                     var participantId = $('#pid').val();
-                    if (participantId) {
+                    if (participantId === 'P1-1' ||
+                        participantId === 'P1-2' ||
+                        participantId === 'P2-1' ||
+                        participantId === 'P2-2' ||
+                        participantId === 'P3-1' ||
+                        participantId === 'P3-2' ||
+                        participantId === 'P4-1' ||
+                        participantId === 'P4-2') {
                         ACPToolKit.setCurrentParticipantId(participantId);
                         window.location = 'questionnaire-pre.html';
                     } else {
