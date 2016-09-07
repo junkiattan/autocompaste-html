@@ -1,0 +1,303 @@
+{
+    "experiments": [
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Phrase",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is atomic number?",
+            "answer": "Number of positive charges"
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Phrase",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is the second bracketed phrase in Article 6? Exclude the brackets when you copy.",
+            "answer": "considered a zero article"
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Phrase",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is alternator?",
+            "answer": "Name for an AC generator"
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Sentence",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is autotransformer?",
+            "answer": "A single winding transformer where the output is taken from taps on the winding."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Sentence",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is the third sentence of the second paragraph of Article 6?",
+            "answer": "This is in contrast to other adjectives and determiners, which are typically optional."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Sentence",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is alligator clip?",
+            "answer": "It is a spring clip on the end of a test lead used to make a temporary connection."
+        },
+        
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is attenuate?",
+            "answer": "To reduce the amplitude of an action or signal. The opposite of amplification."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is the first paragraph of Article 6, excluding the first sentence?",
+            "answer": "In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that')."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is alkaline cell?",
+            "answer": "A primary cell that delivers more current than a carbon-zinc cell. Also known as an 'alkaline manganese cell'."
+        },
+        
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Phrase",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is armature?",
+            "answer": "Rotating or moving component of a magnetic circuit"
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Phrase",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is bandwidth?",
+            "answer": "Width of the band of frequencies between the half power points"
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Phrase",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is AC generator?",
+            "answer": "Device to transform mechanical energy into AC electrical power"
+        },
+        
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Sentence",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is antenna, receiving?",
+            "answer": "A device that converts a radiated electromagnetic wave into an electrical wave."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Sentence",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is barrier potential?",
+            "answer": "The natural difference of potential that exists across a forward biased pn junction."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Sentence",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is AC/DC?",
+            "answer": "They are equipment that will operate on either an AC or DC power source."
+        },
+        
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is apparent power?",
+            "answer": "The combination of reactive power and true power is called apparent power, and it is the product of a circuit's voltage and current, without reference to phase angle. Apparent power is measured in the unit of Volt-Amps (VA) and is symbolized by the capital letter S."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is bipolar junction transistor?",
+            "answer": "It is an active semiconductor device formed by two P-N junctions whose function is amplification of an electric current. Bipolar transistors are made from 3 sections of semiconductor material (alternating P-type and N-type), with 2 resulting P-N junctions."
+        },
+        { 
+            "technique": "TRADITIONAL", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is AC load line?",
+            "answer": "The ac load line is a graph that represents all possible combinations of and for a given amplifier. Under normal circumstances, the ac and dc load lines for a given amplifier are not identical."
+        },
+        
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Phrase",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is avionics?",
+            "answer": "Aviation electronics"
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Phrase",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is the first bracketed phrase in Article 6? Exclude the brackets when you copy.",
+            "answer": "such as 'this' and 'that'"
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Phrase",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is ammeter?",
+            "answer": "Meter used to measure current"
+        },
+        
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Sentence",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is balanced bridge?",
+            "answer": "A condition that occurs when a bridge circuit is adjusted to produce a zero output."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Sentence",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is the second sentence of the first paragraph of Article 6?",
+            "answer": "In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Sentence",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is AC voltage?",
+            "answer": "A voltage in which the polarity alternates."
+        },
+        
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is audio?",
+            "answer": "Relating to frequencies that can be heard by the human ear. Approximately 20 Hz to 20 kHz."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is the second paragragh of Article 6, excluding the last 2 sentences?",
+            "answer": "In languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "Yes",
+            "data_file": "data/texts.json",
+            "stimuli": "What is Admittance? (symbol 'Y')",
+            "answer": "Measure of how easily AC will flow through a circuit. Admittance is the reciprocal of impedance and is measured in siemens."
+        },
+        
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Phrase",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is ampere?",
+            "answer": "Unit of electrical current"
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Phrase",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is binary?",
+            "answer": "A base 2 number system"
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Phrase",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is AC power supply?",
+            "answer": "Power supply that delivers an AC voltage"
+        },
+        
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Sentence",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is amplifier?",
+            "answer": "A circuit that increases the voltage, current, or power of a signal."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Sentence",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is base biasing?",
+            "answer": "A method of biasing a BJT in which the bias voltage is supplied to the base by means of a resistor."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Sentence",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is active component?",
+            "answer": "A component that changes the amplitude of a signal between input and output."
+        },
+        
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is anode?",
+            "answer": "The positive electrode or terminal of a device. The 'P' material of a diode."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is bistable multivibrator?",
+            "answer": "A multi vibrator with two stable states. An external signal is required to change the output from one state to the other. Also called a latch."
+        },
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "Paragraph",
+            "priorKnowledge": "No",
+            "data_file": "data/texts.json",
+            "stimuli": "What is absorption?",
+            "answer": "Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere."
+        }
+        
+    ]
+}

@@ -134,12 +134,35 @@
                     $("#proceedText").show();
                     setTimeout(function() {
                         $("#proceed").show();
-                    }, 180000);
+                    }, 3000);
                 }
             }
 
             $(document).ready(function () {
-                $.get('data/experiments.json', function (data) {
+                
+                var determineExperimentData = ACPToolKit.getCurrentParticipantId();
+                var dataFile;
+                var mapFile = {
+                    'P1-1': 'data/experiments1.json',
+                    'P1-2': 'data/experiments1.json',
+                    'P2-1': 'data/experiments2.json',
+                    'P2-2': 'data/experiments2.json',
+                    'P3-1': 'data/experiments3.json',
+                    'P3-2': 'data/experiments3.json',
+                    'P4-1': 'data/experiments4.json',
+                    'P4-2': 'data/experiments4.json'
+                }
+                dataFile = mapFile[determineExperimentData];
+//                if (determineExperimentData == 'P1-1' || determineExperimentData == 'P1-2'){
+//                    dataFile = 'data/experiments1.json';
+//                } else if (determineExperimentData == 'P2-1' || determineExperimentData == 'P2-2'){
+//                    dataFile = 'data/experiments2.json';
+//                } else if (determineExperimentData == 'P3-1' || determineExperimentData == 'P3-2'){
+//                    dataFile = 'data/experiments3.json';
+//                } else if (determineExperimentData == 'P4-1' || determineExperimentData == 'P4-2'){
+//                    dataFile = 'data/experiments4.json';
+//                }
+                $.get(dataFile, function (data) {
                     // Initialise experiments
                     trialsData = data.experiments;
                     currentTrial = 0;
