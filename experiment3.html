@@ -65,7 +65,7 @@
                     
                     <button class="btn btn-primary btn-lg" id="nextTask" onclick="next()">Next Task</button>
                     
-                    <h4 id="proceedText">This is the end of the block. Please take a short break. After 3 minutes, a Proceed button will appear to take you to the next block. Please ready yourself before you click Proceed.</h4>
+                    <h4 id="proceedText">This is the end of the block. Please take a short break. After 3 minutes, a Proceed button will appear to take you to the post-questionnaire. Please ready yourself before you click Proceed.</h4>
                     
                     <button class="btn btn-primary btn-lg" id="proceed" onclick="window.location = 'questionnaire-post.html';">Proceed</button>
                 </div>
@@ -134,7 +134,7 @@
                     $("#proceedText").show();
                     setTimeout(function() {
                         $("#proceed").show();
-                    }, 3000);
+                    }, 180000);
                 }
             }
 
